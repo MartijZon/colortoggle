@@ -1,0 +1,28 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="/CSS/Style.css">
+    <title>color toggle</title>
+</head>
+<body>
+    <nav class="nav-main">
+        <div class="btn-toggle-nav" onclick="toggleNav()"></div>
+    </nav>
+
+    <aside class="side-bar" onchange="changecolor(this);">
+        <ul onchange="changecolor(this);">
+            <li><span>colors</span></li>
+            <li id="1" onclick="color(this)" class="color clr1"><a href="#">blue</a></li>
+            <li id="2" onclick="color(this)" class="color clr2"><a href="#">orange</a></li>
+            <li onclick="color(this)" class="color clr3"><a href="#">green</a></li>
+            <li onclick="color(this)" class="color clr4"><a href="#">yellow</a></li>
+            <li onclick="color(this)" class="color clr0"><a href="#">reset</a></li>
+        </ul>
+    </aside>
+
+</body>
+<script src="/main.js"></script>
+</html>
